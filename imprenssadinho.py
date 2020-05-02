@@ -22,6 +22,7 @@ fim = False
 # Garante uma dificuldáde válida
 while not fim:
     nivel_escolhido = input("Escolha a dificuldade...\nFácil - 10 tentativas\nDifícil - 5 tentativas:\n").lower()
+
     # Varre os níveis para alocar a qntde de vidas conformeo nível escolhido
     for n in nivel:
         if nivel_escolhido in n[0]:
@@ -56,3 +57,4 @@ while not fim:
         elif intervalo[1] > num > num_secreto:
             intervalo[1] = num
         print("O novo intervalo é: %i " % intervalo[0] + "à %i" % intervalo[1])
+input("Aperte Enter para sair... ")
